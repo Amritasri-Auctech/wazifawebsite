@@ -4,10 +4,10 @@ import { FiUsers } from "react-icons/fi";
 import { FaHandHoldingHeart, FaHandHoldingUsd, FaUndo } from "react-icons/fa";
 import { MdVolunteerActivism } from "react-icons/md";
 
-import memberImg   from "../../assets/wazifa/Banner1.jpg";
-import donateImg   from "../../assets/wazifa/banner.webp";
-import namzadImg   from "../../assets/wazifa/5componnet.jpg";
-import qarzImg     from "../../assets/wazifa/career-banner.jpg";
+import memberImg   from "../../assets/wazifa/2.jpg";
+import donateImg   from "../../assets/wazifa/1.jpg";
+import namzadImg   from "../../assets/wazifa/found.jpg";
+import qarzImg     from "../../assets/wazifa/4.jpg";
 
 // ── Card data ────────────────────────────────────────────────────────
 const cards = [
