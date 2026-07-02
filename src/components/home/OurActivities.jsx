@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import activityImg from "../../assets/wazifa/our activity.jpg";
 
 const OurActivities = () => (
@@ -8,7 +8,7 @@ const OurActivities = () => (
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">
         <span className="text-gray-900">OUR </span>
-        <span className="text-green-500">ACTIVITIES</span>
+        <span className="text-[#86c724]">ACTIVITIES</span>
       </h2>
 
       {/* 50/50 Grid — image left, text right */}

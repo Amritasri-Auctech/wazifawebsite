@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -31,14 +31,14 @@ const Preloader = ({ onDone }) => {
           <div className="relative w-20 h-20 mb-5">
             <div className="absolute inset-0 rounded-full border-4 border-gray-200" />
             <motion.div
-              className="absolute inset-0 rounded-full border-4 border-t-green-600 border-r-transparent border-b-transparent border-l-transparent"
+              className="absolute inset-0 rounded-full border-4 border-t-[#86c724] border-r-transparent border-b-transparent border-l-transparent"
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 0.9, ease: "linear" }}
             />
           </div>
 
           {/* Brand text */}
-          <p className="text-green-700 font-semibold text-sm tracking-widest uppercase">
+          <p className="text-[#6a941a] font-semibold text-sm tracking-widest uppercase">
             Anjuman Wazifa-e-Sadat
           </p>
         </motion.div>

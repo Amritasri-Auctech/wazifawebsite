@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaHandHoldingHeart } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 const DonateBanner = () => (
   <section
     id="donate"
-    className="py-16 sm:py-20 bg-gradient-to-r from-green-800 to-green-600 relative overflow-hidden"
+    className="py-16 sm:py-20 bg-gradient-to-r from-[#5a8016] to-[#86c724] relative overflow-hidden"
   >
     {/* Diagonal stripe overlay */}
     <div
@@ -25,16 +25,16 @@ const DonateBanner = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <FaHandHoldingHeart size={48} className="mx-auto mb-5 text-green-200" />
+        <FaHandHoldingHeart size={48} className="mx-auto mb-5 text-[#d4f086]" />
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Your Donation Changes Lives</h2>
-        <p className="text-green-100 text-base sm:text-lg max-w-xl mx-auto mb-8 leading-relaxed">
+        <p className="text-[#eaf7c2] text-base sm:text-lg max-w-xl mx-auto mb-8 leading-relaxed">
           Every contribution you make goes directly towards helping Sadat and Momineen families
           in need. Join us in making a difference today.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="#"
-            className="bg-white text-green-700 hover:bg-green-50 font-bold text-sm px-8 py-3 rounded transition-colors duration-200"
+            className="bg-white text-[#6a941a] hover:bg-[#f4fbe0] font-bold text-sm px-8 py-3 rounded transition-colors duration-200"
           >
             Donate Now ♥
           </a>

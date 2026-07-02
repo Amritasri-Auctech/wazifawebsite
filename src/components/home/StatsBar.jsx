@@ -1,11 +1,11 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 
 import { HOME_STATS } from "../../constants/homeData";
 import { STAT_ICONS } from "../../constants/icons";
 
 const StatsBar = () => (
-  <section className="bg-green-700 py-8">
+  <section className="bg-[#6a941a] py-8">
     <div className="max-w-[1280px] mx-auto px-4">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center text-white">
         {HOME_STATS.map(({ iconKey, value, label }) => (
@@ -17,9 +17,9 @@ const StatsBar = () => (
             transition={{ duration: 0.4 }}
             className="flex flex-col items-center gap-2"
           >
-            <div className="text-green-200">{STAT_ICONS[iconKey]}</div>
+            <div className="text-[#d4f086]">{STAT_ICONS[iconKey]}</div>
             <span className="text-2xl sm:text-3xl font-bold">{value}</span>
-            <span className="text-sm text-green-100 font-medium">{label}</span>
+            <span className="text-sm text-[#eaf7c2] font-medium">{label}</span>
           </motion.div>
         ))}
       </div>

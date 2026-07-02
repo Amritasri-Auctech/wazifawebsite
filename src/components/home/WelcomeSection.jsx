@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import aboutCollage from "../../assets/images/about_1.webp";
 import aboutLogo    from "../../assets/images/about_2.webp";
 
@@ -13,7 +13,7 @@ const WelcomeSection = () => (
         <div>
           {/* Heading sits directly above the text, inside left column */}
           <h2 className="text-5xl sm:text-3xl font-semibold mb-6 tracking-wide text-center">
-            <span className="text-green-500">WEL</span>
+            <span className="text-[#86c724]">WEL</span>
             <span className="text-gray-900">COME</span>
           </h2>
 

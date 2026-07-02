@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
@@ -12,7 +12,7 @@ const ServicesSection = () => (
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <span className="text-green-600 text-sm font-semibold uppercase tracking-widest">
+        <span className="text-[#86c724] text-sm font-semibold uppercase tracking-widest">
           Our Services
         </span>
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2">
@@ -33,16 +33,16 @@ const ServicesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.07 }}
-            className="bg-white rounded-xl border border-gray-100 p-6 hover:shadow-lg hover:border-green-200 transition-all duration-200 group"
+            className="bg-white rounded-xl border border-gray-100 p-6 hover:shadow-lg hover:border-[#d4f086] transition-all duration-200 group"
           >
-            <div className="w-14 h-14 flex items-center justify-center rounded-full bg-green-50 text-green-600 mb-5 group-hover:bg-green-600 group-hover:text-white transition-colors duration-200">
+            <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#f4fbe0] text-[#86c724] mb-5 group-hover:bg-[#86c724] group-hover:text-white transition-colors duration-200">
               {SERVICE_ICONS[iconKey]}
             </div>
             <h3 className="text-gray-800 font-semibold text-base mb-2">{title}</h3>
             <p className="text-gray-500 text-sm leading-relaxed mb-4">{desc}</p>
             <Link
               to={link}
-              className="inline-flex items-center gap-1 text-green-600 hover:text-green-800 text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-1 text-[#86c724] hover:text-[#5a8016] text-sm font-medium transition-colors"
             >
               Learn More <FiArrowRight size={14} />
             </Link>

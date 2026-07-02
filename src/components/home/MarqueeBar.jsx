@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { MARQUEE_NOTICES } from "../../constants/homeData";
 import bellIcon from "../../assets/images/bell-icon.png";
 
@@ -13,7 +13,7 @@ import bellIcon from "../../assets/images/bell-icon.png";
 const TEXT = MARQUEE_NOTICES.join("          ✦          ");
 
 const MarqueeBar = () => (
-  <div className="w-full bg-[#1a1a1a] border-t-2 border-green-600 overflow-hidden">
+  <div className="w-full bg-[#1a1a1a] border-t-2 border-[#86c724] overflow-hidden">
     <div className="flex items-center">
 
       {/* Static label badge */}
@@ -32,10 +32,10 @@ const MarqueeBar = () => (
         <div className="marquee-track whitespace-nowrap">
           {/* Duplicate text so it loops seamlessly */}
           <span className="marquee-content text-gray-200 text-[12px] sm:text-[13px] leading-relaxed">
-            <span className="text-green-400 font-normal normal-case tracking-normal">Important Notice: </span>
+            <span className="text-[#9ed42e] font-normal normal-case tracking-normal">Important Notice: </span>
             {TEXT}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="text-green-400 font-normal normal-case tracking-normal">Important Notice: </span>
+            <span className="text-[#9ed42e] font-normal normal-case tracking-normal">Important Notice: </span>
             {TEXT}
           </span>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
@@ -16,7 +16,7 @@ const AboutSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <span className="text-green-600 text-sm font-semibold uppercase tracking-widest">
+        <span className="text-[#86c724] text-sm font-semibold uppercase tracking-widest">
           About Us
         </span>
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-5 leading-tight">
@@ -34,7 +34,7 @@ const AboutSection = () => (
         </p>
         <Link
           to="/about"
-          className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-6 py-3 rounded transition-colors duration-200"
+          className="inline-flex items-center gap-2 bg-[#86c724] hover:bg-[#6a941a] text-white text-sm font-semibold px-6 py-3 rounded transition-colors duration-200"
         >
           Read More <FiArrowRight size={15} />
         </Link>
@@ -51,7 +51,7 @@ const AboutSection = () => (
         {ABOUT_FEATURES.map(({ title, desc }) => (
           <div
             key={title}
-            className="bg-gray-50 border border-gray-100 rounded-lg p-5 hover:border-green-300 hover:shadow-md transition-all duration-200"
+            className="bg-gray-50 border border-gray-100 rounded-lg p-5 hover:border-[#d4f086] hover:shadow-md transition-all duration-200"
           >
             <h4 className="text-gray-800 font-semibold text-sm mb-1">{title}</h4>
             <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>

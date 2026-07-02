@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { useState, useRef, useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
@@ -58,7 +58,7 @@ const DownloadRisala = () => {
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 tracking-wide">
-          <span className="text-green-500">DOWNLOAD </span>
+          <span className="text-[#86c724]">DOWNLOAD </span>
           <span className="text-gray-900">-RISALA WAZIFA</span>
         </h2>
 
@@ -85,7 +85,7 @@ const DownloadRisala = () => {
               {/* Label part */}
               <a
                 href="#"
-                className="bg-green-600 hover:bg-green-700 text-white text-[11px] sm:text-xs
+                className="bg-[#86c724] hover:bg-[#6a941a] text-white text-[11px] sm:text-xs
                            font-bold tracking-wider uppercase px-4 py-2.5 rounded-l
                            transition-colors duration-200"
               >
@@ -95,8 +95,8 @@ const DownloadRisala = () => {
               <button
                 onClick={() => setDropOpen((p) => !p)}
                 aria-label="Toggle earlier editions"
-                className="bg-green-700 hover:bg-green-800 text-white px-2.5 rounded-r
-                           border-l border-green-500 transition-colors duration-200"
+                className="bg-[#6a941a] hover:bg-[#5a8016] text-white px-2.5 rounded-r
+                           border-l border-[#86c724] transition-colors duration-200"
               >
                 <FiChevronDown
                   size={14}
@@ -113,8 +113,8 @@ const DownloadRisala = () => {
                   <li key={label}>
                     <a
                       href={href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50
-                                 hover:text-green-700 transition-colors text-left"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f4fbe0]
+                                 hover:text-[#6a941a] transition-colors text-left"
                     >
                       {label}
                     </a>

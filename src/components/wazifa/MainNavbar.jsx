@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+﻿import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
@@ -19,7 +19,7 @@ const DropdownMenu = ({ items, isOpen }) => (
           <li key={item.path}>
             <Link
               to={item.path}
-              className="block px-5 py-2.5 text-[13px] text-gray-700 hover:bg-green-600 hover:text-white transition-colors duration-150"
+              className="block px-5 py-2.5 text-[13px] text-gray-700 hover:bg-[#86c724] hover:text-white transition-colors duration-150"
             >
               {item.label}
             </Link>
@@ -81,8 +81,8 @@ const MainNavbar = () => {
                   to={item.path}
                   className={`flex items-center gap-1 px-4 py-4 text-[13px] font-semibold tracking-wider uppercase whitespace-nowrap transition-colors duration-150
                     ${active
-                      ? "bg-green-600 text-white"
-                      : "text-gray-200 hover:bg-green-600 hover:text-white"
+                      ? "bg-[#86c724] text-white"
+                      : "text-gray-200 hover:bg-[#86c724] hover:text-white"
                     }`}
                 >
                   {item.label}
@@ -111,7 +111,7 @@ const MainNavbar = () => {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle navigation"
-          className="bg-green-600 hover:bg-green-700 text-white p-2.5 transition-colors duration-200"
+          className="bg-[#86c724] hover:bg-[#6a941a] text-white p-2.5 transition-colors duration-200"
         >
           {mobileOpen ? <FiX size={20} /> : <FiMenu size={20} />}
         </button>
@@ -140,8 +140,8 @@ const MainNavbar = () => {
                         to={item.path}
                         className={`flex-1 flex items-center gap-2 px-5 py-3 text-[13px] font-semibold uppercase tracking-wider transition-colors
                           ${active
-                            ? "bg-green-600 text-white"
-                            : "text-gray-300 hover:bg-green-600 hover:text-white"
+                            ? "bg-[#86c724] text-white"
+                            : "text-gray-300 hover:bg-[#86c724] hover:text-white"
                           }`}
                       >
                         {item.label}
@@ -156,7 +156,7 @@ const MainNavbar = () => {
                         <button
                           onClick={() => setMobileExpanded(expanded ? null : item.label)}
                           className={`px-4 py-3 transition-colors ${
-                            active ? "bg-green-600 text-white" : "text-gray-300 hover:text-white"
+                            active ? "bg-[#86c724] text-white" : "text-gray-300 hover:text-white"
                           }`}
                           aria-label={`Expand ${item.label}`}
                         >
@@ -182,7 +182,7 @@ const MainNavbar = () => {
                             <li key={sub.path}>
                               <Link
                                 to={sub.path}
-                                className="block px-8 py-2.5 text-[13px] text-gray-400 hover:text-white hover:bg-green-700 transition-colors border-b border-gray-800 last:border-0"
+                                className="block px-8 py-2.5 text-[13px] text-gray-400 hover:text-white hover:bg-[#6a941a] transition-colors border-b border-gray-800 last:border-0"
                               >
                                 {sub.label}
                               </Link>

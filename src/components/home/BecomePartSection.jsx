@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import { FiUsers, FiRotateCcw } from "react-icons/fi";
 import { FaHeart, FaUniversity } from "react-icons/fa";
@@ -12,10 +12,10 @@ const cards = [
   {
     img:      memberImg,
     icon:     <FiUsers size={15} />,
-    iconBg:   "bg-green-500",
+    iconBg:   "bg-[#86c724]",
     desc:     "Click here, fill the form, and become a valued part of AWSWM's noble mission.",
     btnLabel: "Become a Member",
-    btnClass: "bg-green-600 hover:bg-green-700",
+    btnClass: "bg-[#86c724] hover:bg-[#6a941a]",
     to:       "/members/join",
   },
   {
