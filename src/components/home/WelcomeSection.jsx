@@ -1,22 +1,23 @@
 import React from "react";
-import logo         from "../../assets/logo.png";
-import aboutImg     from "../../assets/wazifa/about_1.webp";
+import aboutCollage from "../../assets/images/about_1.webp";
+import aboutLogo    from "../../assets/images/about_2.webp";
 
 const WelcomeSection = () => (
-  <section className="w-full bg-white py-12 sm:py-16">
-    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+  <section className="py-12 pb-16 bg-white">
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
 
-        {/* ── LEFT — Text ── */}
+      {/* ── Two-column grid ── */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+        {/* LEFT — Heading + Text */}
         <div>
-          {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 tracking-widest">
+          {/* Heading sits directly above the text, inside left column */}
+          <h2 className="text-5xl sm:text-3xl font-semibold mb-6 tracking-wide text-center">
             <span className="text-green-500">WEL</span>
             <span className="text-gray-900">COME</span>
           </h2>
 
-          {/* Paragraphs — justified like screenshot */}
-          <div className="space-y-4 text-[13.5px] sm:text-sm text-gray-700 leading-relaxed text-justify">
+          <div className="space-y-5 text-[15px] leading-7 text-gray-700 text-justify">
             <p>
               Anjuman Wazifa-e-Sadat-wa-Momineen was established in 1912 with a modest capital of
               Rs. 4.50 (72 Annas) by two eminent educationists Late Haji S. Jalaluddin Haider and
@@ -27,7 +28,7 @@ const WelcomeSection = () => (
             <p>
               Over time, the Anjuman has benefited more than nine thousand students. Many have gone
               on to become Engineers, Doctors, Lawyers, Teachers, Administrators, Judges, Writers,
-              Bankers, Philosophers, Alim-e-Deen and even Ministers.
+              Bankers, Philosophers, Alim‑e‑Deen and even Ministers.
             </p>
             <p>
               The Anjuman celebrated its centenary in 2012. Its income sources include membership
@@ -42,36 +43,28 @@ const WelcomeSection = () => (
           </div>
         </div>
 
-        {/* ── RIGHT — Image ── */}
-        <div className="relative flex items-start justify-center">
+        {/* RIGHT — Collage with logo badge */}
+        <div className="relative pb-10">
+
+          {/* Main collage image */}
           <img
-            src={aboutImg}
-            alt="Spreading Successful Smiles – Anjuman Wazifa"
-            className="w-full h-auto object-cover rounded-xl shadow-md"
-            draggable={false}
+            src={aboutCollage}
+            alt="Anjuman collage"
+            className="w-full h-auto rounded-2xl shadow-lg object-cover"
           />
 
-          {/* "Spreading Successful Smiles" overlay badge */}
-          <div className="absolute bottom-16 right-3 sm:right-5
-                          bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2
-                          text-center shadow-md max-w-[130px]">
-            <p className="text-[11px] font-bold text-gray-800 leading-tight">
-              Spreading ✦<br />
-              <span className="text-[10px] font-semibold text-gray-600 tracking-widest uppercase">
-                Successful<br />Smiles
-              </span>
-            </p>
+          {/* Logo badge — bottom-left overlap */}
+          <div className="absolute bottom-0 
+                          bg-white p-2.5 rounded-2xl
+                          shadow-[0_6px_18px_rgba(0,0,0,0.12)]">
+            <img
+              src={aboutLogo}
+              alt="AWSM Logo"
+              className="w-25 h-25 object-contain rounded-xl"
+            />
           </div>
 
-          {/* Logo badge — bottom-right */}
-          <div className="absolute -bottom-5 right-4 sm:right-6
-                          w-16 h-16 sm:w-20 sm:h-20
-                          bg-white rounded-xl shadow-lg
-                          flex items-center justify-center p-2">
-            <img src={logo} alt="AWSM Logo" className="w-full h-full object-contain" />
-          </div>
         </div>
-
       </div>
     </div>
   </section>

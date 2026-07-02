@@ -27,7 +27,7 @@ export const HOME_STATS = [
 
 // ── Marquee notice text ──────────────────────────────────────────────
 export const MARQUEE_NOTICES = [
-  "🔔 Important Notice:Applications are now open for students of Classes 9 to 12. Submit your form within the prescribed timeline to be considered for the scholarship program.                        ",
+  "Applications are now open for students of Classes 9 to 12. Submit your form within the prescribed timeline to be considered for the scholarship program.                        ",
 ];
 
 

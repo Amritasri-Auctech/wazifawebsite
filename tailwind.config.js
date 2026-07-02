@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Karla", "sans-serif"],
+        karla: ["Karla", "sans-serif"],
+      },
       colors: {
         primary: "var(--base-skin)",
         dark: "var(--base-dark)",

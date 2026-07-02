@@ -7,20 +7,15 @@
 // ── Main Navbar Items ────────────────────────────────────────────────
 export const NAV_ITEMS = [
   { label: "Home", path: "/" },
-  {
-    label: "About Anjuman",
-    path: "/about",
-  },
-  {
-    label: "Office Bearers",
-    path: "/office-bearers",
-  },
+  { label: "About Anjuman", path: "/about" },
+  { label: "Office Bearers", path: "/office-bearers" },
   {
     label: "Members",
     path: "/members",
     dropdown: [
-      { label: "Member List", path: "/members/list" },
-      { label: "Become a Member", path: "/members/join" },
+      { label: "Umoomi Member", path: "/members/umoomi" },
+      { label: "Dawami Member", path: "/members/dawami" },
+      { label: "Life Member", path: "/members/life" },
     ],
   },
   { label: "Namzad Fund", path: "/namzad-fund" },
@@ -29,15 +24,13 @@ export const NAV_ITEMS = [
     label: "Executive",
     path: "/executive",
     dropdown: [
-      { label: "Executive Committee", path: "/executive/committee" },
-      { label: "Meeting Minutes", path: "/executive/minutes" },
+      { label: "Mansabi Member", path: "/executive/mansabi" },
+      { label: "Elected Member", path: "/executive/elected" },
+      { label: "Mohsin-e-Anjuman", path: "/executive/mohsin" },
+      { label: "Sarparst-e-Anjuman", path: "/executive/sarparst" },
     ],
   },
-  {
-    label: "Jobs & Career",
-    path: "/jobs",
-    badge: "NEW",
-  },
+  { label: "Jobs & Career", path: "/jobs", badge: "NEW" },
   { label: "Contact Us", path: "/contact" },
 ];
 

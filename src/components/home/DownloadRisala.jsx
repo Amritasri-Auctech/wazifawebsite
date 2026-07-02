@@ -12,10 +12,10 @@ const mainButtons = [
 ];
 
 const earlierEditions = [
-  { label: "Edition 2020", href: "#" },
-  { label: "Edition 2018", href: "#" },
-  { label: "Edition 2015", href: "#" },
-  { label: "Edition 2012", href: "#" },
+  { label: "2021", href: "#" },
+  { label: "2020", href: "#" },
+  { label: "2019",href: "#" },
+  { label: "2018", href: "#" },
 ];
 
 const rightButtons = [
@@ -114,7 +114,7 @@ const DownloadRisala = () => {
                     <a
                       href={href}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50
-                                 hover:text-green-700 transition-colors"
+                                 hover:text-green-700 transition-colors text-left"
                     >
                       {label}
                     </a>

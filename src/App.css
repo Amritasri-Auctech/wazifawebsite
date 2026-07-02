@@ -1,4 +1,4 @@
-body, p, span, a, label, input, ul, li, h1, h2, h3, h4, h5, h6 {
+*, *::before, *::after {
   font-family: "Karla", sans-serif;
 }
 

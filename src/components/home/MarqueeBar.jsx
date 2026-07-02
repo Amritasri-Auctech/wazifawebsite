@@ -1,5 +1,6 @@
 import React from "react";
 import { MARQUEE_NOTICES } from "../../constants/homeData";
+import bellIcon from "../../assets/images/bell-icon.png";
 
 /**
  * MarqueeBar
@@ -16,11 +17,14 @@ const MarqueeBar = () => (
     <div className="flex items-center">
 
       {/* Static label badge */}
-      <div className="flex-shrink-0 bg-green-600 text-white text-[11px] sm:text-xs font-bold
-                      uppercase tracking-widest px-3 sm:px-4 py-3 whitespace-nowrap
+      <div className="flex-shrink-0 text-white text-[11px] bg-white sm:text-xs font-bold
+                      uppercase tracking-widest px-2 sm:px-4 py-3 whitespace-nowrap
                       flex items-center gap-1.5 self-stretch">
-        <span className="inline-block w-2 h-2 rounded-full bg-white animate-pulse" />
-        Notice
+        <img
+          src={bellIcon}
+          alt="Notice"
+          className="w-5 h-5 sm:w-6 sm:h-6 object-contain "
+        />
       </div>
 
       {/* Scrolling track */}
@@ -28,8 +32,10 @@ const MarqueeBar = () => (
         <div className="marquee-track whitespace-nowrap">
           {/* Duplicate text so it loops seamlessly */}
           <span className="marquee-content text-gray-200 text-[12px] sm:text-[13px] leading-relaxed">
+            <span className="text-green-400 font-normal normal-case tracking-normal">Important Notice: </span>
             {TEXT}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="text-green-400 font-normal normal-case tracking-normal">Important Notice: </span>
             {TEXT}
           </span>
         </div>
